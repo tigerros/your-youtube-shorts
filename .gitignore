@@ -1,0 +1,6 @@
+.idea
+*.pem
+dist
+**/chromium/_metadata/**/*
+node_modules
+package-lock.json
