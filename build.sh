@@ -46,9 +46,9 @@ npx rollup --config
 # Create Chromium archives.
 # This doesn't end in "/*" in order to copy the directory itself into the archive.
 # The reason for that is because users have to load the unpacked directory in Chrome, not the archive.
-#7z a -tzip $dist/reddit-media-page-cleanup-chromium.release.zip ./$chromium_dir_min
+#7z a -tzip $dist/no-youtube-shorts-chromium.release.zip ./$chromium_dir_min
 # Create archive with original source code for debugging.
-#7z a -tzip $dist/reddit-media-page-cleanup-chromium.debug.zip ./$chromium_dir
+#7z a -tzip $dist/no-youtube-shorts-chromium.debug.zip ./$chromium_dir
 
 # Delete .min directories.
 rm -rf $firefox_dir_min
