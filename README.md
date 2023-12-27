@@ -9,18 +9,18 @@
 
 # Features
 
+- Redirects shorts to the regular video player.
+  The shorts player has basically no video controls and is vastly inferior to the regular one.
+- Removes the "Shorts" section from the homepage.
+  This doesn't remove other links to shorts, such as the channel "Shorts" tab or the shorts button in the sidebar.
+  I don't think these are very intrusive and don't need to be removed.
+
 By default, both of these are enabled, but you can turn either one off in the options page.
 To open it, go to:
 
 1. `about:addons`
 2. "No YouTube Shorts"
 3. "Options" (next to the "Details" and "Permissions" tabs).
-
-- Redirects shorts to the regular video player.
-The shorts player has basically no video controls and is vastly inferior to the regular one.
-- Removes the "Shorts" section from the homepage.
-This doesn't remove other links to shorts, such as the channel "Shorts" tab or the shorts button in the sidebar.
-I don't think these are very intrusive and don't need to be removed.
 
 # Comparison to other extensions
 
