@@ -39,9 +39,9 @@ npx html-minifier --file-ext html --input-dir $firefox_dir --output-dir $firefox
 npx rollup --config
 
 # Create minified .XPI package for release.
-7z a -tzip $dist/reddit-media-page-cleanup-firefox.release.xpi ./$firefox_dir_min/*
+7z a -tzip $dist/no-youtube-shorts-firefox.release.xpi ./$firefox_dir_min/*
 # Create .XPI package with original source code for debugging.
-7z a -tzip $dist/reddit-media-page-cleanup-firefox.debug.xpi ./$firefox_dir/*
+7z a -tzip $dist/no-youtube-shorts-firefox.debug.xpi ./$firefox_dir/*
 
 # Create Chromium archives.
 # This doesn't end in "/*" in order to copy the directory itself into the archive.
