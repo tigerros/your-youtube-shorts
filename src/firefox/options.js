@@ -3,12 +3,12 @@
 /** @type {boolean} */
 const DEFAULT_SHOULD_REDIRECT_SHORTS = true;
 /** @type {boolean} */
-const DEFAULT_SHOULD_REMOVE_SHORTS = false;
+const DEFAULT_SHOULD_REMOVE_SHORTS = true;
 /** @type {browser.scripting.RegisteredContentScript} */
 const REMOVE_SHORTS_CONTENT_SCRIPT = {
     id: "remove-shorts",
     js: ["remove-shorts.js"],
-    matches: ["https://www.youtube.com/*"],
+    matches: ["https://www.youtube.com/"],
 };
 
 /** @type {HTMLInputElement} */

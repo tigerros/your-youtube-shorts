@@ -6,6 +6,18 @@ const SHORTS_PATH = "/shorts";
 const WATCH_PATH = "/watch";
 /** @type {boolean} */
 const DEFAULT_SHOULD_REDIRECT_SHORTS = true;
+/** @type {boolean} */
+const DEFAULT_SHOULD_REMOVE_SHORTS = true;
+
+if (DEFAULT_SHOULD_REMOVE_SHORTS) {
+    browser.scripting.registerContentScripts([{
+        id: "remove-shorts",
+        js: ["remove-shorts.js"],
+        matches: ["https://www.youtube.com/"],
+    }]).catch(function (err) {
+        console.error("[No YouTube Shorts] Failed to register content script that removes shorts. Error: " + err);
+    });
+}
 
 /**
  * @param {string} url

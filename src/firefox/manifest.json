@@ -3,7 +3,7 @@
   "author": "Leonard D.",
   "name": "No YouTube Shorts",
   "version": "1.0.0",
-  "description": "Redirects the shorts player to the regular video player, and has an option to disable shorts entirely.",
+  "description": "Redirects the shorts player to the regular video player, and disables shorts on the home page.",
   "homepage_url": "https://github.com/tigerros/no-youtube-shorts",
   "permissions": [
     "storage",
