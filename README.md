@@ -10,7 +10,11 @@
 # Features
 
 By default, both of these are enabled, but you can turn either one off in the options page.
-To open it, go to [about:addons](about:addons) > "No YouTube Shorts" > "Options" (next to the "Details" and "Permissions" tabs).
+To open it, go to:
+
+1. `about:addons`
+2. "No YouTube Shorts"
+3. "Options" (next to the "Details" and "Permissions" tabs).
 
 - Redirects shorts to the regular video player.
 The shorts player has basically no video controls and is vastly inferior to the regular one.
