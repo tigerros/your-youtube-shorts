@@ -29,7 +29,7 @@ To open it, go to:
 There are some extensions that do this out there (e.g. [YouTube Shorts Redirect](https://github.com/huantianad/youtube-shorts-redirect)), but they use inefficient and unreliable methods of redirecting.
 They also don't provide the option to remove the "Shorts" section entirely.
 
-Back to inefficiency; the example I mentioned inserts a script into YouTube, checks if the URL is a short, and redirects if it is.
+Back to their issues though; the example I mentioned inserts a script into YouTube, checks if the URL is a short, and redirects if it is.
 It also subscribes to a YouTube navigation event. This has several issues:
 
 - Ineffient (*very*): The script is inserted relatively late into loading, which means that you will see and your computer will load the shorts page, but before the video is played, the script redirects it.
