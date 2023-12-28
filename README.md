@@ -9,6 +9,8 @@
 
 # Features
 
+Tired of YouTube forcing the horrible shorts layout on you, or do you want to stop wasting time and screen space with the "Shorts" section on your homepage? Then this extension is for you!
+
 - Redirects shorts to the regular video player.
   The shorts player has basically no video controls and is vastly inferior to the regular one.
 - Removes the "Shorts" section from the homepage.
@@ -24,14 +26,15 @@ To open it, go to:
 
 # Comparison to other extensions
 
-There are some extensions that do this out there (e.g. [YouTube Shorts Redirect](https://github.com/huantianad/youtube-shorts-redirect)), but they use unreliable methods of redirecting.
-The example I mentioned inserts a script into YouTube, checks if the URL is a short, and redirects if it is.
+There are some extensions that do this out there (e.g. [YouTube Shorts Redirect](https://github.com/huantianad/youtube-shorts-redirect)), but they use inefficient and unreliable methods of redirecting.
+They also don't provide the option to remove the "Shorts" section entirely.
+
+Back to inefficiency; the example I mentioned inserts a script into YouTube, checks if the URL is a short, and redirects if it is.
 It also subscribes to a YouTube navigation event. This has several issues:
 
-- It's very inefficient because the script is inserted relatively late into loading, which means
-that you will see and your computer will load the shorts page, but before the video is played, the script redirects it.
-- It inserts a script to YouTube regardless of whether it's a short.
-- The name of the event it subscribes to may change, thus breaking it.
+- Ineffient (*very*): The script is inserted relatively late into loading, which means that you will see and your computer will load the shorts page, but before the video is played, the script redirects it.
+- Ineffient: It inserts a script to YouTube regardless of whether it's a short.
+- Unrealible: The name of the event it subscribes to may change, thus breaking it.
 
 No YouTube Shorts works in the browser, where it intercepts all `youtube.com/shorts` URLs before *anything* is loaded,
 rather than inserting a script into the page. This is the best way to do it.
@@ -40,7 +43,7 @@ rather than inserting a script into the page. This is the best way to do it.
 
 ## Firefox
 
-Get it from the [add-on store](https://addons.mozilla.org/en-US/firefox/addon/no-youtube-shorts/).
+Get it from the [add-on store](https://addons.mozilla.org/en-US/firefox/addon/your-youtube-shorts/).
 
 ## Chromium
 
@@ -48,6 +51,6 @@ Not yet ported.
 
 ## Building from the source code
 
-Clone the repo and run the [`build.sh`](https://github.com/tigerros/no-youtube-shorts/blob/master/build.sh) file.
+Clone the repo and run the [`build.sh`](https://github.com/tigerros/your-youtube-shorts/blob/master/build.sh) file.
 However, it uses binaries which it doesn't install automatically, so you need to install them yourself.
-They are listed in the file. You will also need to install the NPM packages listed in [`package.json`](https://github.com/tigerros/no-youtube-shorts/blob/master/package.json).
+They are listed in the file. You will also need to install the NPM packages listed in [`package.json`](https://github.com/tigerros/your-youtube-shorts/blob/master/package.json).
